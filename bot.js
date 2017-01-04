@@ -21,7 +21,7 @@ function tweetNow(text) {
   var tweet = {status: text}
   Twitter.post('statuses/update', tweet, function (err, data, reponse) {
     if (err) {
-      console.log('Error replying...');
+      console.log('Error replying...' + err);
     } else {
       console.log('Success in replying...');
     }
