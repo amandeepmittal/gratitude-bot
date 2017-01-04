@@ -1,0 +1,32 @@
+{
+  "name": "gratitude-bot",
+  "version": "1.0.0",
+  "description": "Send a gratitude message to the followers",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amandeepmittal/gratitude-bot.git"
+  },
+  "keywords": [
+    "twitter",
+    "bot",
+    "node",
+    "node.js"
+  ],
+  "author": "Aman Mittal (http://amandeepmittal.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amandeepmittal/gratitude-bot/issues"
+  },
+  "homepage": "https://github.com/amandeepmittal/gratitude-bot#readme",
+  "dependencies": {
+    "twit": "2.2.5"
+  },
+  "engines": {
+    "node": "~6.9.2",
+    "npm": "~.3.10.9"
+  }
+}
