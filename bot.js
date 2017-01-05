@@ -19,7 +19,7 @@ function followed(event) {
 
 function tweetNow(text) {
   var tweet = {status: text}
-  Twitter.post('statuses/update', tweet, function (err, data, reponse) {
+  Twitter.post('statuses/update', tweet, function (err, data, response) {
     if (err) {
       console.log('Error replying...' + err);
     } else {
