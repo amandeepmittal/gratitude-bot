@@ -19,13 +19,21 @@ function followed(event) {
 
 function tweetNow(text) {
   var tweet = {status: text}
-  Twitter.post('statuses/update', tweet, function (err, data, response) {
+  
+  // check username before RT, avoid reply to Self
+  var n = text.search(/@amanhimself/i);
+  
+  if (n !== -1) {
+    console.log('Tweet to Self... SKIPPED!
+  } else {
+    Twitter.post('statuses/update', tweet, function (err, data, response) {
     if (err) {
       console.log('Error replying...' + err);
     } else {
       console.log('Success in replying...');
     }
   });
+  }
 }
 
 stream.on('follow', followed);
