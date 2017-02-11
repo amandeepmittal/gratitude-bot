@@ -24,7 +24,7 @@ function tweetNow(text) {
   var n = text.search(/@amanhimself/i);
   
   if (n !== -1) {
-    console.log('Tweet to Self... SKIPPED!
+    console.log('Tweet to Self... SKIPPED!');
   } else {
     Twitter.post('statuses/update', tweet, function (err, data, response) {
     if (err) {
