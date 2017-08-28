@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/amandeepmittal/gratitude-bot#readme",
   "dependencies": {
-    "twit": "2.2.5"
+    "twit": "2.2.9"
   },
   "engines": {
     "node": "~6.9.2",
